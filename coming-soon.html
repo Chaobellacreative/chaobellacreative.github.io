@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaobella Creative | Professional Video Content Studio Tampa, FL</title>
+  <meta name="description" content="Professional video content for Tampa businesses. Launching soon. Early access sign-up available." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    :root {
+      --cream:   #FDFAF6;
+      --charcoal: #2C2C2C;
+      --coral:   #E8A87C;
+      --muted:   #6B6B6B;
+      --white:   #FFFFFF;
+    }
+    
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Navigation */
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid #e8e3dc;
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    
+    .nav-logo span { color: var(--coral); }
+    
+    /* Hero */
+    section {
+      padding: 120px 0;
+    }
+    
+    .hero {
+      background: linear-gradient(135deg, var(--cream) 0%, #f5f0eb 100%);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    
+    .hero-content {
+      max-width: 700px;
+    }
+    
+    .hero-content h1 {
+      font-size: 4rem;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      font-weight: 800;
+    }
+    
+    .hero-content p {
+      font-size: 1.25rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+    
+    .launch-badge {
+      display: inline-block;
+      background: var(--coral);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+    
+    .cta-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    
+    .btn {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .btn-primary {
+      background: var(--coral);
+      color: var(--white);
+    }
+    
+    .btn-primary:hover {
+      background: #d4895a;
+      transform: translateY(-2px);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      color: var(--charcoal);
+      border: 2px solid var(--charcoal);
+    }
+    
+    .btn-outline:hover {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+    
+    /* Newsletter Form */
+    .newsletter {
+      margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: 1px solid #e8e3dc;
+    }
+    
+    .newsletter p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    
+    .email-form {
+      display: flex;
+      gap: 0.5rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .email-form input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border: 2px solid #e8e3dc;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+    }
+    
+    .email-form input:focus {
+      outline: none;
+      border-color: var(--coral);
+    }
+    
+    .email-form button {
+      padding: 0.75rem 1.5rem;
+      background: var(--coral);
+      color: var(--white);
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    .email-form button:hover {
+      background: #d4895a;
+    }
+    
+    /* Social Links */
+    .social-links {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    
+    .social-links a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      color: var(--coral);
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 3rem 0 1.5rem;
+      text-align: center;
+      margin-top: 5rem;
+    }
+    
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+    
+    footer p a {
+      color: var(--coral);
+      text-decoration: none;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero-content p {
+        font-size: 1.05rem;
+      }
+      
+      .cta-group {
+        flex-direction: column;
+      }
+      
+      .btn { width: 100%; text-align: center; }
+      
+      .email-form {
+        flex-direction: column;
+      }
+      
+      .email-form button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">Chaobella<span>.</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Coming Soon -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="launch-badge">Coming Soon</div>
+        
+        <h1>Build Your Brand Presence On Social — Consistently</h1>
+        
+        <p>Professional short-form video content shot at your location. Edited, captioned, and ready to post. We're launching in April 2026.</p>
+        
+        <div class="cta-group">
+          <a href="#newsletter" class="btn btn-primary">Get Early Access</a>
+          <a href="mailto:hello@chaobellacreative.com" class="btn btn-outline">Contact Us</a>
+        </div>
+        
+        <!-- Newsletter Signup -->
+        <div class="newsletter" id="newsletter">
+          <p><strong>Be the first to know when we launch.</strong> Join our early access list.</p>
+          <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="email" name="email" placeholder="your@email.com" required />
+            <button type="submit">Notify Me</button>
+          </form>
+        </div>
+        
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://www.instagram.com/chaobellacreative" target="_blank" rel="noopener">Instagram</a>
+          <span>•</span>
+          <a href="https://www.tiktok.com/@chaobellacreative" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Chaobella Creative LLC · Tampa Bay, FL</p>
+      <p style="margin-top: 1rem;">
+        <a href="privacy.html">Privacy Policy</a> • 
+        <a href="terms.html">Terms</a> • 
+        <a href="accessibility.html">Accessibility</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
