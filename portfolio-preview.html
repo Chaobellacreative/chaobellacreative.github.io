@@ -532,8 +532,8 @@
 
     .portfolio-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.75rem;
+      grid-template-columns: 1fr;
+      gap: 3rem;
     }
 
     .portfolio-card {
@@ -542,11 +542,23 @@
       background: var(--white);
       border: 1px solid var(--border);
       transition: transform 0.2s, box-shadow 0.2s;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      padding: 2rem;
     }
 
     .portfolio-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 12px 32px rgba(44,44,44,0.1);
+    }
+
+    .portfolio-video {
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      background: #000;
     }
 
     .portfolio-thumb {
@@ -593,13 +605,13 @@
     .portfolio-card:nth-child(3) .portfolio-thumb-label { color: rgba(80,40,10,0.55); }
 
     .portfolio-info {
-      padding: 1.25rem 1.5rem;
+      padding: 0;
     }
 
     .portfolio-client {
-      font-size: 1rem;
+      font-size: 1.25rem;
       font-weight: 700;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.5rem;
     }
 
     .portfolio-desc {
@@ -851,7 +863,8 @@
 
       .services-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
 
-      .portfolio-grid { grid-template-columns: 1fr; }
+      .portfolio-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .portfolio-card { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.5rem; }
 
       .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
 
