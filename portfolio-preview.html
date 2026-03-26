@@ -557,8 +557,15 @@
     .portfolio-video {
       border-radius: 8px;
       overflow: hidden;
-      aspect-ratio: 5/7;
       background: #000;
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    .portfolio-video video {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     .portfolio-thumb {
@@ -1035,13 +1042,12 @@
       <div class="portfolio-grid">
 
         <div class="portfolio-card">
-          <div class="portfolio-video" style="position: relative; overflow: hidden; border-radius: 8px; background: #000; aspect-ratio: 16/9;">
+          <div class="portfolio-video">
             <video 
               autoplay 
               muted 
               loop 
-              playsinline 
-              style="width: 100%; height: 100%; object-fit: contain; display: block;">
+              playsinline>
               <source src="/videos/lnk-spa/LandKSpa.mp4" type="video/mp4">
             </video>
           </div>
