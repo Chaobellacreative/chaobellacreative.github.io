@@ -4,61 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chaobella Creative | Professional Video Content Studio Tampa, FL</title>
-  <meta name="description" content="Professional video content for Tampa businesses. Consistent, high-quality short-form videos for Instagram, TikTok, and social media. Starting at $500/mo." />
+  <meta name="description" content="Professional video content for Tampa businesses. Launching soon. Early access sign-up available." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
-  
-  <!-- LocalBusiness Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Chaobella Creative LLC",
-    "image": "https://chaobellacreative.com/logo.png",
-    "description": "Professional video content studio for Tampa businesses. Short-form video production for Instagram, TikTok, and social media.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Tampa",
-      "addressRegion": "FL",
-      "postalCode": "33612",
-      "addressCountry": "US"
-    },
-    "telephone": "",
-    "email": "hello@chaobellacreative.com",
-    "url": "https://chaobellacreative.com",
-    "sameAs": [
-      "https://www.instagram.com/chaobellacreative",
-      "https://www.tiktok.com/@chaobellacreative"
-    ],
-    "priceRange": "$150 - $800",
-    "serviceType": "Video Production",
-    "areaServed": {
-      "@type": "City",
-      "name": "Tampa",
-      "state": "FL"
-    }
-  }
-  </script>
   <style>
-    /* ============================================
-       RESET & BASE
-    ============================================ */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
     :root {
       --cream:   #FDFAF6;
-      --charcoal:#2C2C2C;
+      --charcoal: #2C2C2C;
       --coral:   #E8A87C;
-      --coral-dark: #D4895A;
-      --coral-light: #F5D0B1;
       --muted:   #6B6B6B;
-      --border:  #E8E3DC;
       --white:   #FFFFFF;
     }
-
+    
     html { scroll-behavior: smooth; }
-
     body {
       font-family: 'Poppins', sans-serif;
       background: var(--cream);
@@ -66,1114 +27,293 @@
       line-height: 1.6;
       font-size: 16px;
     }
-
-    img { max-width: 100%; display: block; }
+    
     a { color: inherit; text-decoration: none; }
-
-    /* ============================================
-       TYPOGRAPHY
-    ============================================ */
-    h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
-
-    .section-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--coral);
-      margin-bottom: 0.75rem;
-    }
-
-    .section-title {
-      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-      color: var(--charcoal);
-      margin-bottom: 1rem;
-    }
-
-    .section-sub {
-      font-size: 1.05rem;
-      color: var(--muted);
-      max-width: 560px;
-      margin: 0 auto;
-    }
-
-    /* ============================================
-       LAYOUT HELPERS
-    ============================================ */
+    img { max-width: 100%; display: block; }
+    
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 0 20px;
     }
-
-    section { padding: 5rem 0; }
-
-    .text-center { text-align: center; }
-
-    /* ============================================
-       BUTTONS
-    ============================================ */
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 1.75rem;
-      border-radius: 6px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      border: 2px solid transparent;
-    }
-
-    .btn-primary {
-      background: var(--coral);
-      color: var(--white);
-      border-color: var(--coral);
-    }
-    .btn-primary:hover {
-      background: var(--coral-dark);
-      border-color: var(--coral-dark);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 14px rgba(232,168,124,0.35);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--charcoal);
-      border-color: var(--charcoal);
-    }
-    .btn-outline:hover {
-      background: var(--charcoal);
-      color: var(--cream);
-      transform: translateY(-1px);
-    }
-
-    .btn-outline-white {
-      background: transparent;
-      color: var(--white);
-      border-color: rgba(255,255,255,0.6);
-    }
-    .btn-outline-white:hover {
-      background: rgba(255,255,255,0.15);
-      border-color: var(--white);
-    }
-
-    /* ============================================
-       NAVIGATION
-    ============================================ */
+    
+    /* Navigation */
     nav {
+      background: var(--white);
+      border-bottom: 1px solid #e8e3dc;
+      padding: 1.5rem 0;
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(253,250,246,0.95);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
     }
-
+    
     .nav-inner {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      height: 68px;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
+      align-items: center;
     }
-
+    
     .nav-logo {
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: var(--charcoal);
-      letter-spacing: -0.01em;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -1px;
     }
+    
     .nav-logo span { color: var(--coral); }
-
-    .nav-links {
+    
+    /* Hero */
+    section {
+      padding: 120px 0;
+    }
+    
+    .hero {
+      background: linear-gradient(135deg, var(--cream) 0%, #f5f0eb 100%);
+      text-align: center;
       display: flex;
       align-items: center;
-      gap: 2rem;
-      list-style: none;
+      justify-content: center;
+      min-height: 100vh;
     }
-
-    .nav-links a {
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--muted);
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--charcoal); }
-
-    .nav-cta { margin-left: 1rem; }
-
-    /* Hamburger */
-    .nav-toggle {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 4px;
-      background: none;
-      border: none;
-    }
-    .nav-toggle span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--charcoal);
-      border-radius: 2px;
-      transition: all 0.3s;
-    }
-
-    /* ============================================
-       HERO
-    ============================================ */
-    .hero {
-      padding: 7rem 0 6rem;
-      background: linear-gradient(135deg, var(--charcoal) 0%, #3d3d3d 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -60px; right: -60px;
-      width: 420px; height: 420px;
-      background: radial-gradient(circle, rgba(232,168,124,0.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -80px; left: -40px;
-      width: 320px; height: 320px;
-      background: radial-gradient(circle, rgba(232,168,124,0.10) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero-inner {
-      position: relative;
-      z-index: 1;
+    
+    .hero-content {
       max-width: 700px;
     }
-
-    .hero-badge {
-      display: inline-block;
-      background: rgba(232,168,124,0.2);
-      color: var(--coral-light);
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.35rem 1rem;
-      border-radius: 100px;
+    
+    .hero-content h1 {
+      font-size: 4rem;
+      line-height: 1.1;
       margin-bottom: 1.5rem;
-      border: 1px solid rgba(232,168,124,0.3);
-    }
-
-    .hero h1 {
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      color: var(--white);
-      margin-bottom: 1.25rem;
       font-weight: 800;
     }
-
-    .hero h1 em {
-      font-style: normal;
-      color: var(--coral);
-    }
-
-    .hero-sub {
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      color: rgba(255,255,255,0.72);
-      margin-bottom: 2.5rem;
-      max-width: 520px;
+    
+    .hero-content p {
+      font-size: 1.25rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
       line-height: 1.7;
     }
-
-    .hero-actions {
+    
+    .launch-badge {
+      display: inline-block;
+      background: var(--coral);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+    
+    .cta-group {
       display: flex;
       gap: 1rem;
+      justify-content: center;
       flex-wrap: wrap;
-    }
-
-    .hero-tagline {
-      margin-top: 3.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.12);
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.45);
-      letter-spacing: 0.04em;
-    }
-
-    /* ============================================
-       ABOUT
-    ============================================ */
-    #about { background: var(--cream); }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .about-visual {
-      background: linear-gradient(135deg, var(--charcoal) 0%, #4a4a4a 100%);
-      border-radius: 12px;
-      aspect-ratio: 4/3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      color: rgba(255,255,255,0.3);
-      font-size: 3rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .about-visual::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 30% 30%, rgba(232,168,124,0.25), transparent 60%);
-    }
-
-    .about-visual-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
-      position: relative;
-    }
-
-    .about-content .section-sub {
-      margin: 0;
-      text-align: left;
-      margin-bottom: 2rem;
-    }
-
-    .about-bullets {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .about-bullets li {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: var(--charcoal);
-    }
-
-    .about-bullets li::before {
-      content: '';
-      width: 8px;
-      height: 8px;
-      min-width: 8px;
-      border-radius: 50%;
-      background: var(--coral);
-    }
-
-    .about-disclaimer {
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-style: italic;
-      border-left: 3px solid var(--coral-light);
-      padding-left: 0.9rem;
-      margin-top: 1.5rem;
-      line-height: 1.6;
-    }
-
-    /* ============================================
-       SERVICES
-    ============================================ */
-    #services {
-      background: #F5F0E9;
-    }
-
-    .services-header {
-      text-align: center;
       margin-bottom: 3rem;
     }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .service-card {
-      background: var(--white);
-      border-radius: 12px;
-      padding: 2rem 1.75rem;
-      border: 2px solid var(--border);
-      position: relative;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(44,44,44,0.1);
-    }
-
-    .service-card.featured {
-      border-color: var(--coral);
-    }
-
-    .service-badge {
-      position: absolute;
-      top: -13px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--coral);
-      color: var(--white);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.3rem 1rem;
-      border-radius: 100px;
-      white-space: nowrap;
-    }
-
-    .service-name {
-      font-size: 1.3rem;
-      font-weight: 800;
-      margin-bottom: 0.25rem;
-    }
-
-    .service-price {
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: var(--coral);
-      margin-bottom: 0.25rem;
-      line-height: 1;
-    }
-
-    .service-price span {
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--muted);
-    }
-
-    .service-volume {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-bottom: 1.25rem;
-      font-weight: 500;
-    }
-
-    .service-divider {
+    
+    .btn {
+      padding: 1rem 2rem;
       border: none;
-      border-top: 1px solid var(--border);
-      margin-bottom: 1.25rem;
-    }
-
-    .service-features {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.55rem;
-      margin-bottom: 1.75rem;
-    }
-
-    .service-features li {
-      font-size: 0.88rem;
-      color: var(--charcoal);
-      display: flex;
-      align-items: flex-start;
-      gap: 0.6rem;
-      line-height: 1.4;
-    }
-
-    .service-features li::before {
-      content: '✓';
-      color: var(--coral);
-      font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 0.05em;
-    }
-
-    .service-cta {
-      display: block;
-      text-align: center;
-      padding: 0.65rem 1rem;
-      border-radius: 6px;
-      font-size: 0.88rem;
+      border-radius: 8px;
       font-weight: 600;
-      border: 2px solid var(--coral);
-      color: var(--coral);
-      transition: all 0.2s;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
     }
-
-    .service-cta:hover,
-    .service-card.featured .service-cta {
+    
+    .btn-primary {
       background: var(--coral);
       color: var(--white);
     }
-
-    /* ============================================
-       PORTFOLIO
-    ============================================ */
-    #portfolio { background: var(--cream); }
-
-    .portfolio-header {
-      text-align: center;
-      margin-bottom: 3rem;
+    
+    .btn-primary:hover {
+      background: #d4895a;
+      transform: translateY(-2px);
     }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.75rem;
+    
+    .btn-outline {
+      background: transparent;
+      color: var(--charcoal);
+      border: 2px solid var(--charcoal);
     }
-
-    .portfolio-card {
-      border-radius: 12px;
-      overflow: hidden;
-      background: var(--white);
-      border: 1px solid var(--border);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .portfolio-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(44,44,44,0.1);
-    }
-
-    .portfolio-thumb {
-      height: 200px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      font-size: 2.5rem;
-      position: relative;
-    }
-
-    .portfolio-thumb-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      position: relative;
-      z-index: 1;
-    }
-
-    .portfolio-thumb-emoji {
-      position: relative;
-      z-index: 1;
-    }
-
-    .portfolio-card:nth-child(1) .portfolio-thumb {
-      background: linear-gradient(135deg, #d4a5c9 0%, #e8c4d8 50%, #f0dce8 100%);
-      color: rgba(80,20,60,0.5);
-    }
-    .portfolio-card:nth-child(1) .portfolio-thumb-label { color: rgba(80,20,60,0.55); }
-
-    .portfolio-card:nth-child(2) .portfolio-thumb {
-      background: linear-gradient(135deg, #7cb8d4 0%, #a8d4e8 50%, #c8e8f0 100%);
-      color: rgba(20,60,80,0.5);
-    }
-    .portfolio-card:nth-child(2) .portfolio-thumb-label { color: rgba(20,60,80,0.55); }
-
-    .portfolio-card:nth-child(3) .portfolio-thumb {
-      background: linear-gradient(135deg, #f0b87c 0%, #f5cc9a 50%, #fae0bc 100%);
-      color: rgba(80,40,10,0.5);
-    }
-    .portfolio-card:nth-child(3) .portfolio-thumb-label { color: rgba(80,40,10,0.55); }
-
-    .portfolio-info {
-      padding: 1.25rem 1.5rem;
-    }
-
-    .portfolio-client {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 0.3rem;
-    }
-
-    .portfolio-desc {
-      font-size: 0.88rem;
-      color: var(--muted);
-    }
-
-    /* ============================================
-       WHY CHAOBELLA
-    ============================================ */
-    #why {
+    
+    .btn-outline:hover {
       background: var(--charcoal);
       color: var(--white);
     }
-
-    #why .section-label { color: var(--coral-light); }
-    #why .section-title { color: var(--white); }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2.5rem;
-      margin-top: 3.5rem;
+    
+    /* Newsletter Form */
+    .newsletter {
+      margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: 1px solid #e8e3dc;
     }
-
-    .why-card {
-      text-align: center;
-      padding: 0 1rem;
-    }
-
-    .why-icon {
-      width: 60px;
-      height: 60px;
-      background: rgba(232,168,124,0.15);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      margin: 0 auto 1.25rem;
-      border: 2px solid rgba(232,168,124,0.25);
-    }
-
-    .why-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 0.65rem;
-      color: var(--white);
-    }
-
-    .why-desc {
-      font-size: 0.9rem;
-      color: rgba(255,255,255,0.6);
-      line-height: 1.7;
-    }
-
-    /* ============================================
-       CONTACT
-    ============================================ */
-    #contact { background: #F5F0E9; }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.6fr;
-      gap: 4rem;
-      align-items: start;
-    }
-
-    .contact-info h3 {
-      font-size: 1.4rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .contact-info p {
+    
+    .newsletter p {
       font-size: 0.95rem;
       color: var(--muted);
-      margin-bottom: 2rem;
-      line-height: 1.7;
+      margin-bottom: 1rem;
     }
-
-    .contact-social {
+    
+    .email-form {
       display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
+      gap: 0.5rem;
+      max-width: 400px;
+      margin: 0 auto;
     }
-
-    .social-link {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--charcoal);
-      transition: color 0.2s;
-    }
-
-    .social-link:hover { color: var(--coral); }
-
-    .social-icon {
-      width: 36px;
-      height: 36px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-    }
-
-    .contact-form {
-      background: var(--white);
-      border-radius: 12px;
-      padding: 2.5rem;
-      border: 1px solid var(--border);
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .form-group label {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--charcoal);
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      padding: 0.7rem 0.9rem;
-      border: 1.5px solid var(--border);
+    
+    .email-form input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border: 2px solid #e8e3dc;
       border-radius: 6px;
       font-family: 'Poppins', sans-serif;
-      font-size: 0.9rem;
-      color: var(--charcoal);
-      background: var(--cream);
-      transition: border-color 0.2s;
-      outline: none;
-      width: 100%;
+      font-size: 0.95rem;
     }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
+    
+    .email-form input:focus {
+      outline: none;
       border-color: var(--coral);
     }
-
-    .form-group textarea { resize: vertical; min-height: 120px; }
-
-    .form-submit {
-      width: 100%;
-      padding: 0.85rem;
-      font-size: 1rem;
-    }
-
-    /* ============================================
-       FOOTER
-    ============================================ */
-    footer {
-      background: var(--charcoal);
-      color: rgba(255,255,255,0.55);
-      padding: 2.5rem 0;
-    }
-
-    .footer-inner {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      align-items: center;
-      text-align: center;
-    }
-
-    .footer-logo {
-      font-size: 1.1rem;
-      font-weight: 800;
+    
+    .email-form button {
+      padding: 0.75rem 1.5rem;
+      background: var(--coral);
       color: var(--white);
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
     }
-    .footer-logo span { color: var(--coral); }
-
-    .footer-links {
+    
+    .email-form button:hover {
+      background: #d4895a;
+    }
+    
+    /* Social Links */
+    .social-links {
+      margin-top: 2rem;
       display: flex;
       gap: 1.5rem;
-      flex-wrap: wrap;
       justify-content: center;
     }
-
-    .footer-links a {
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.45);
-      transition: color 0.2s;
+    
+    .social-links a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
     }
-    .footer-links a:hover { color: var(--coral); }
-
-    .footer-copy {
-      font-size: 0.78rem;
+    
+    .social-links a:hover {
+      color: var(--coral);
     }
-
-    .footer-ai-note {
-      font-size: 0.72rem;
-      color: rgba(255,255,255,0.3);
-      font-style: italic;
+    
+    /* Footer */
+    footer {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 3rem 0 1.5rem;
+      text-align: center;
+      margin-top: 5rem;
     }
-
-    /* ============================================
-       RESPONSIVE
-    ============================================ */
+    
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+    
+    footer p a {
+      color: var(--coral);
+      text-decoration: none;
+    }
+    
+    /* Responsive */
     @media (max-width: 768px) {
-      section { padding: 3.5rem 0; }
-
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 68px;
-        left: 0; right: 0;
-        background: var(--cream);
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero-content p {
+        font-size: 1.05rem;
+      }
+      
+      .cta-group {
         flex-direction: column;
-        gap: 0;
-        border-bottom: 1px solid var(--border);
-        padding: 0.5rem 0;
       }
-
-      .nav-links.open { display: flex; }
-
-      .nav-links li { width: 100%; }
-      .nav-links a {
-        display: block;
-        padding: 0.85rem 1.5rem;
-        font-size: 1rem;
+      
+      .btn { width: 100%; text-align: center; }
+      
+      .email-form {
+        flex-direction: column;
       }
-
-      .nav-cta { display: none; }
-      .nav-toggle { display: flex; }
-      nav { position: relative; }
-
-      .hero { padding: 4rem 0 3.5rem; }
-
-      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .about-visual { aspect-ratio: 16/9; }
-
-      .services-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
-
-      .portfolio-grid { grid-template-columns: 1fr; }
-
-      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-
-      .form-row { grid-template-columns: 1fr; }
-
-      .contact-form { padding: 1.75rem; }
-    }
-
-    @media (max-width: 480px) {
-      .hero-actions { flex-direction: column; }
-      .hero-actions .btn { text-align: center; }
+      
+      .email-form button { width: 100%; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ============================================
-       NAVIGATION
-  ============================================ -->
+  <!-- Navigation -->
   <nav>
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">Chaobella<span>.</span></a>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="nav-cta"><a href="#contact" class="btn btn-primary">Get a Free Quote</a></li>
-      </ul>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">Chaobella<span>.</span></a>
+      </div>
     </div>
   </nav>
 
-  <!-- ============================================
-       HERO
-  ============================================ -->
+  <!-- Hero / Coming Soon -->
   <section class="hero">
     <div class="container">
-      <div class="hero-inner">
-        <div class="hero-badge">📍 Tampa Bay, FL</div>
-        <h1>Video Content That Works<br><em>As Hard As You Do</em></h1>
-        <h1 style="font-size: 3.5rem; line-height: 1.2; margin-bottom: 1.5rem;">Build Your Brand Presence<br>On Social — Consistently</h1>
-        <p class="hero-sub">Professional short-form video content shot at your location. Edited, captioned, and ready to post. Perfect for cafes, spas, boutiques, and service businesses.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Start Today →</a>
-          <a href="#contact" class="btn btn-outline-white">Get a Free Quote</a>
+      <div class="hero-content">
+        <div class="launch-badge">Coming Soon</div>
+        
+        <h1>Build Your Brand Presence On Social — Consistently</h1>
+        
+        <p>Professional short-form video content shot at your location. Edited, captioned, and ready to post. We're launching in April 2026.</p>
+        
+        <div class="cta-group">
+          <a href="#newsletter" class="btn btn-primary">Get Early Access</a>
+          <a href="mailto:hello@chaobellacreative.com" class="btn btn-outline">Contact Us</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       ABOUT
-  ============================================ -->
-  <section id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-visual">
-          <div class="portfolio-thumb-emoji">🎬</div>
-          <div class="about-visual-label">Chaobella Creative</div>
-        </div>
-
-        <div class="about-content">
-          <p class="section-label">About Us</p>
-          <h2 class="section-title">Built for Tampa's Local Businesses</h2>
-          <p class="section-sub">
-            We're Chaobella Creative — a Tampa-based video studio that films, edits, and delivers professional short-form content for local businesses. Our production process uses AI-assisted workflows for faster editing and captions, which means more videos per shoot, lower costs, and faster turnaround. No agency overhead. Just consistent, platform-ready content.
-          </p>
-
-          <ul class="about-bullets">
-            <li>iPhone Pro cinematography</li>
-            <li>Multi-platform delivery</li>
-            <li>Captions &amp; copy included</li>
-            <li>Locally rooted, digitally sharp</li>
-          </ul>
-
-          <a href="#contact" class="btn btn-primary">Work With Us</a>
-
-          <p class="about-disclaimer">
-            Our production process incorporates modern AI-assisted tools for editing, captioning, and content optimization — so you get more for less.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       PRICING
-  ============================================ -->
-  <section id="pricing">
-    <div class="container">
-      <div class="services-header">
-        <p class="section-label">Pricing & Packages</p>
-        <h2 class="section-title">Content Plans for Every Stage</h2>
-        <p class="section-sub">Transparent pricing. No hidden fees. Every package includes filming, editing, and delivery — ready to post.</p>
-      </div>
-
-      <div class="services-grid">
-
-        <!-- Starter -->
-        <div class="service-card">
-          <div class="service-name">Starter</div>
-          <div class="service-price">$500<span>/mo</span></div>
-          <div class="service-volume">4 Videos Per Month</div>
-          <hr class="service-divider" />
-          <ul class="service-features">
-            <li>✓ On-location filming (2-3 hours per shoot)</li>
-            <li>✓ Fully edited + captioned</li>
-            <li>✓ Ready for Instagram, TikTok, Facebook</li>
-            <li>✓ One new video weekly</li>
-            <li>✓ No strategy meetings or revisions</li>
-          </ul>
-          <a href="#contact" class="service-cta">Get Started</a>
-        </div>
-
-        <!-- Growth (Most Popular) -->
-        <div class="service-card featured">
-          <div class="service-badge">Most Popular</div>
-          <div class="service-name">Growth</div>
-          <div class="service-price">$800<span>/mo</span></div>
-          <div class="service-volume">8 Videos Per Month</div>
-          <hr class="service-divider" />
-          <ul class="service-features">
-            <li>✓ On-location filming (2 shoots/month)</li>
-            <li>✓ Fully edited + captioned</li>
-            <li>✓ Ready for all platforms</li>
-            <li>✓ Two new videos weekly</li>
-            <li>✓ Plus: Brief strategy check-in monthly</li>
-          </ul>
-          <a href="#contact" class="service-cta">Get Started</a>
-        </div>
-
-        <!-- À la Carte -->
-        <div class="service-card">
-          <div class="service-name">À la Carte</div>
-          <div class="service-price">$150–200<span>/video</span></div>
-          <div class="service-volume">One Video, No Commitment</div>
-          <hr class="service-divider" />
-          <ul class="service-features">
-            <li>✓ Full on-location shoot (2-3 hours)</li>
-            <li>✓ Professional edit + captions</li>
-            <li>✓ Platform-ready</li>
-            <li>✓ Perfect for testing</li>
-            <li>✓ No monthly lock-in</li>
-          </ul>
-          <a href="#contact" class="service-cta">Book a Video</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       PORTFOLIO
-  ============================================ -->
-  <section id="portfolio">
-    <div class="container">
-      <div class="portfolio-header">
-        <p class="section-label">Our Work</p>
-        <h2 class="section-title">Real Clients. Real Results.</h2>
-        <p class="section-sub">Professional video content for Tampa businesses. More coming soon as we work with new clients.</p>
-      </div>
-
-      <div class="portfolio-grid">
-
-        <div class="portfolio-card">
-          <div class="portfolio-thumb">
-            <div class="portfolio-thumb-emoji">🎡</div>
-            <div class="portfolio-thumb-label">Sanwa × SeaWorld</div>
-          </div>
-          <div class="portfolio-info">
-            <div class="portfolio-client">Sanwa × SeaWorld</div>
-            <div class="portfolio-desc">Event collab coverage capturing the energy of a brand partnership at SeaWorld.</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       WHY CHAOBELLA
-  ============================================ -->
-  <section id="why">
-    <div class="container text-center">
-      <p class="section-label">Why Choose Us</p>
-      <h2 class="section-title">The Studio That Shows Up</h2>
-
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon">🏆</div>
-          <div class="why-title">Agency Quality</div>
-          <div class="why-desc">Professional filming, editing, multi-format delivery — without the agency retainer or overhead.</div>
-        </div>
-
-        <div class="why-card">
-          <div class="why-icon">📱</div>
-          <div class="why-title">Built for Social</div>
-          <div class="why-desc">Every video is optimized for the platform it lives on. Vertical, square, horizontal — we deliver it all.</div>
-        </div>
-
-        <div class="why-card">
-          <div class="why-icon">📍</div>
-          <div class="why-title">Local + Personal</div>
-          <div class="why-desc">We show up in person. We know Tampa. We understand what resonates with this community.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       CONTACT
-  ============================================ -->
-  <section id="contact">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p class="section-label">Contact</p>
-          <h2 style="font-size:1.75rem; margin-bottom: 0.75rem;">Let's Make<br>Something Great</h2>
-          <p>Tell us about your business and what you're looking for. We'll get back to you within one business day.</p>
-
-          <!-- Social links hidden until accounts have content
-          <div class="contact-social">
-            <a href="https://www.instagram.com/chaobellacreative" target="_blank" rel="noopener" class="social-link">
-              <div class="social-icon">📸</div>
-              @chaobellacreative
-            </a>
-            <a href="https://www.tiktok.com/@chaobellacreative" target="_blank" rel="noopener" class="social-link">
-              <div class="social-icon">🎵</div>
-              @chaobellacreative
-            </a>
-          </div>
-          -->
-        </div>
-
-        <div class="contact-form">
-          <form action="mailto:hello@chaobellacreative.com" method="POST" enctype="text/plain">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="First Name" placeholder="Maria" required />
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="Last Name" placeholder="Garcia" required />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="businessName">Business Name</label>
-              <input type="text" id="businessName" name="Business Name" placeholder="Sunshine Wellness Spa" required />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="Email" placeholder="maria@yourbusiness.com" required />
-            </div>
-
-            <div class="form-group">
-              <label for="package">Package Interest</label>
-              <select id="package" name="Package Interest">
-                <option value="">— Select a package —</option>
-                <option value="Starter">Starter — $500/mo (4 videos)</option>
-                <option value="Growth">Growth — $800/mo (8 videos)</option>
-                <option value="A la Carte">À la Carte — $150–200/video</option>
-                <option value="Not sure yet">Not sure yet — just exploring</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Tell Us About Your Business</label>
-              <textarea id="message" name="Message" placeholder="What kind of content are you looking for? What platforms are most important to you?"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary form-submit">Send My Inquiry →</button>
+        
+        <!-- Newsletter Signup -->
+        <div class="newsletter" id="newsletter">
+          <p><strong>Be the first to know when we launch.</strong> Join our early access list.</p>
+          <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="email" name="email" placeholder="your@email.com" required />
+            <button type="submit">Notify Me</button>
           </form>
         </div>
+        
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://www.instagram.com/chaobellacreative" target="_blank" rel="noopener">Instagram</a>
+          <span>•</span>
+          <a href="https://www.tiktok.com/@chaobellacreative" target="_blank" rel="noopener">TikTok</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================
-       FOOTER
-  ============================================ -->
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="footer-inner">
-        <div class="footer-logo">Chaobella<span>.</span> Creative</div>
-        <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms</a>
-          <a href="accessibility.html">Accessibility</a>
-        </div>
-        <p class="footer-copy">© 2026 Chaobella Creative LLC · Tampa Bay, FL</p>
-      </div>
+      <p>&copy; 2026 Chaobella Creative LLC · Tampa Bay, FL</p>
+      <p style="margin-top: 1rem;">
+        <a href="privacy.html">Privacy Policy</a> • 
+        <a href="terms.html">Terms</a> • 
+        <a href="accessibility.html">Accessibility</a>
+      </p>
     </div>
   </footer>
-
-  <!-- ============================================
-       JS — Mobile Nav Toggle
-  ============================================ -->
-  <script>
-    const toggle = document.getElementById('navToggle');
-    const links  = document.getElementById('navLinks');
-
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('open');
-    });
-
-    // Close nav when a link is tapped on mobile
-    links.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => links.classList.remove('open'));
-    });
-  </script>
 
 </body>
 </html>
